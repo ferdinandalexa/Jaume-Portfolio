@@ -3,20 +3,39 @@ class NewElement extends HTMLElement
     constructor()
     {
         super();
-        console.log(this);
-        this.paragraph = document.createElement('p');
+        this.attachShadow({mode: "open"});
+    }
+
+    getTemplate()
+    {
+        const template = document.createElement('template');
+        template.innerHTML =
+        `
+            <p>Hi, developer! I'm a new Web Component</p>
+            ${this.getStyles()}
+        `
+        return template;
+    }
+
+    getStyles()
+    {
+        return `
+        <style>
+            p{
+                font-family: sans-serif;
+            }
+        </style>
+        `
+    }
+
+    render()
+    {
+        this.shadowRoot.appendChild(this.getTemplate().content.cloneNode(true));
     }
 
     connectedCallback()
     {
-        this.paragraph.textContent = "Hi, developer! I'm a new Web Component.";
-        this.innerHTML = 
-        `<style> 
-            p{
-                font-family: sans-serif;
-            }
-        <style>`
-        this.appendChild(this.paragraph);
+        this.render();
     }
 }
 customElements.define("new-element", NewElement);
