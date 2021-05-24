@@ -11,7 +11,7 @@ class ReviewCard extends HTMLElement
     {
         const template = document.createElement('template');
         template.innerHTML =
-        `
+        `   
             <div class="container">
                 <article class="ReviewCard">
                     <img src="${this.avatar}" alt="foto de perfil de cliente"/>
@@ -37,12 +37,10 @@ class ReviewCard extends HTMLElement
         <style>
             :host{
                 color: #310A90;
-                display: grid;     
+                display: grid;      
                 position: relative;
-                max-width: 1136px;
             }
 
-            
             .ReviewCard, .Effect{
                 border-radius: 24px;
             }
@@ -53,7 +51,7 @@ class ReviewCard extends HTMLElement
                 display: grid;
                 overflow: hidden;
                 row-gap: 24px;
-                padding: 24px;
+                padding: 1rem;
                 place-items: center;
             }
             
@@ -75,6 +73,7 @@ class ReviewCard extends HTMLElement
             .ReviewCard > h3{
                 font: inherit;
                 opacity: 50%;
+                text-align: center;
                 text-transform: uppercase;
             }
 
@@ -110,6 +109,20 @@ class ReviewCard extends HTMLElement
                 right:0;
                 top:0;
                 z-index:-1;
+            }
+            
+            @media screen and (min-width: 769px){
+                .ReviewCard{
+                    padding: 80px;
+                }
+
+                .ReviewCard > p{
+                    font: bold 2.125rem/3.4382500648498535rem Oxygen; 
+                }
+                
+                .ReviewCard > h3{
+                    font: regular 0.75rem/1.2135000228881836rem Poppins; 
+                }
             }
         </style>
         `

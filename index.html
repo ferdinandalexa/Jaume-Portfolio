@@ -62,9 +62,10 @@
                         </svg>
                     </a>
                 </div>
+                
                 <article class="Project">
                     <div class="Project__Container">
-                        <div class="Project__Info">
+                        <div class="Project__Info fill-primary-color">
                             <title-section>leonidasesteban.com</title-section>
                             <p>Accede a más de 120 proyectos que te ayudarán a mejorar tus habilidades como desarrollador Front-End.</p>
                             <div class="Project__Anchors">
@@ -72,7 +73,10 @@
                                 <jaume-button secondary>Ver código</jaume-button>
                             </div>
                         </div>
-                        <img src="" alt="Foto del projecto">
+                        <picture class="Project__Image">
+                            <source media="(min-width: 414px)" srcset="/static/p-leonidasesteban-0.png">
+                            <img src="/static/p-leonidasesteban-1.png" alt="Foto del projecto">
+                        </picture>
                     </div>
                     <div class="Project__Review">
                         <review-card avatar="/static/user-0.png">
@@ -81,6 +85,53 @@
                         </review-card>
                     </div>
                 </article>
+
+                <article class="Project">
+                    <div class="row-reverse Project__Container">
+                        <div class="Project__Info fill-primary-color">
+                            <title-section>Marvol</title-section>
+                            <p>Es el sitio oficial de Marvol Entertainment. Explore películas, personajes, cómics, programas de televisión, videos y más oficiales de Marvol.</p>
+                            <div class="Project__Anchors">
+                                <jaume-button>Ver proyecto</jaume-button>
+                                <jaume-button secondary>Ver código</jaume-button>
+                            </div>
+                        </div>
+                        <picture class="Project__Image">
+                            <source media="(min-width: 414px)" srcset="/static/p-marvol-0.png">
+                            <img src="/static/p-marvol-1.png" alt="Foto del projecto">
+                        </picture>
+                    </div>
+                    <div class="Project__Review">
+                        <review-card avatar="/static/user-1.png">
+                            <span slot="review">"Jaume ha superado mis expectativas desde el diseño hasta el desarrollo".</span>
+                            <span slot="info">Jason Lopez / Cofundador y CEO de Marvol</span>
+                        </review-card>
+                    </div>
+                </article>
+
+                <article class="Project">
+                    <div class="Project__Container">
+                        <div class="Project__Info fill-primary-color">
+                            <title-section>Netnet</title-section>
+                            <p>Películas y series ilimitadas y mucho más. sDisfruta donde quieras. Cancela cuando quieras.</p>
+                            <div class="Project__Anchors">
+                                <jaume-button>Ver proyecto</jaume-button>
+                                <jaume-button secondary>Ver código</jaume-button>
+                            </div>
+                        </div>
+                        <picture class="Project__Image">
+                            <source media="(min-width: 414px)" srcset="/static/p-net-0.png">
+                            <img src="/static/p-net-1.png" alt="Foto del projecto">
+                        </picture>
+                    </div>
+                    <div class="Project__Review">
+                        <review-card avatar="/static/user-2.png">
+                            <span slot="review">"Por primera vez en la historia de nuestra empresa, aparecimos en todas las plataformas en las que trabajamos".</span>
+                            <span slot="info">Marco Cortez / Netnet</span>
+                        </review-card>
+                    </div>
+                </article>
+
             </section>
             <section class="Contact"></section>
         </main>

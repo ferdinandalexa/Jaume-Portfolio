@@ -51,8 +51,7 @@ class JaumeButton extends HTMLElement
                 height: 49px;
                 letter-spacing: 1.25px;
                 line-height: 23px;
-                max-width: max-content;
-                min-width: 112px;
+                min-width: max-content;
                 padding: 13px 24px;
                 text-align: center;
                 text-transform: uppercase;

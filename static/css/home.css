@@ -19,7 +19,7 @@ body{
 }
 
 review-card{
-    font: var(--headline5);
+    font: var(--caption);
 }
 
 title-section{
@@ -79,6 +79,10 @@ jaume-button{
 }
 
 @media screen and (min-width: 414px){
+    review-card{
+        font: var(--headline5);
+    }
+
     .Navigation{
         display: flex;
         flex-grow: 1;
