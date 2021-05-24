@@ -9,10 +9,14 @@
     <link rel="stylesheet" href="/static/css/home.css"/>
     <link rel="stylesheet" href="/static/css/hero.css"/>
     <link rel="stylesheet" href="/static/css/projects.css"/>
+    <link rel="stylesheet" href="/static/css/contact.css"/>
 </head>
 <body>
     <div id="page">
         <header class="Header">
+            <svg class="Header__Logo fill-primary-color" viewBox="0 0 67 19" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="/static/logo.svg#logo"></use>
+            </svg>
             <nav class="Navigation">
                 <ul class="Navigation__Container">
                     <li class="Navigation__Route">
@@ -129,7 +133,24 @@
                 </article>
 
             </section>
-            <section class="Contact"></section>
+            <section class="Contact">
+                <title-section>Hablemos</title-section>
+                <p class="fill-white-color">Si está interesado en trabajar conmigo en su próximo proyecto, no dude en ponerse en contacto conmigo.</p>
+                <form class="Contact__Form">
+                    <div class="Contact__Container">
+                        <label class="fill-primary-color" for="name">Nombre<span>*</span></label>
+                        <input type="text" name="name" id="name" placeholder="Juan">
+                    </div>
+                    <div class="Contact__Container">
+                        <label class="fill-primary-color" for="email">Correo Electrónico<span>*</span></label>
+                        <input type="email" name="email" id="email" placeholder="juan@gmail.com">
+                    </div>
+                    <div class="Contact__Container">
+                        <label class="fill-primary-color" for="message">Mensaje</label>
+                        <textarea name="message" id="message" rows="10"></textarea>
+                    </div>
+                </form>
+            </section>
         </main>
         <footer class="Footer fill-white-color">
             <svg class="Footer__Logo" viewBox="0 0 67 19" xmlns="http://www.w3.org/2000/svg">

@@ -1,0 +1,51 @@
+.Contact{
+    display: flex;
+    flex-direction: column;
+    margin: 40px 0;
+    max-width: 523px;
+    text-align: left;
+}
+
+.Contact > p{
+    font: var(--body1);
+}
+
+.Contact__Form{
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    width: 100%;
+}
+
+.Contact__Form label{
+    font: var(--body3);
+}
+
+.Contact__Form span{
+    color: red;
+}
+
+.Contact__Form input{
+    border-radius: 8px;
+    height: 50px;
+}
+
+.Contact__Form input::placeholder{
+    font: var(--body1)
+}
+
+.Contact__Form input, .Contact__Form textarea{
+    background: #FFFFFF;
+    border: 1px solid #858C94;
+    box-sizing: border-box;
+    padding: .75rem 1rem;
+    width: 100%;
+}
+
+@media screen and (min-width: 769px){
+    .Contact{
+        align-items: center;
+        text-align: center;
+        margin: 40px auto;
+    }
+}
