@@ -35,6 +35,11 @@ jaume-button{
     fill: #310A90;
 }
 
+.fill-white-color{
+    color: white;
+    fill: white;
+}
+
 #page{
     max-width: 1132px;
     margin: auto;
@@ -78,6 +83,38 @@ jaume-button{
     transition: color .2s ease;
 }
 
+.Footer{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font: var(--body1)
+}
+
+.Footer__Logo{
+    display: none;
+    height: 18px;
+    width: 67px;
+}
+
+.Footer__Message{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+    justify-content: center;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.Footer__Message p{
+    margin: 0;
+}
+
+.Footer__Contact{
+    display: flex;
+    gap: 1rem;
+}
+
 @media screen and (min-width: 414px){
     review-card{
         font: var(--headline5);
@@ -95,5 +132,18 @@ jaume-button{
 
     .Header__Button{
         display: none;
+    }
+}
+
+@media screen and (min-width: 769px){
+    .Footer__Logo{
+        display: initial;
+    }
+}
+
+@media screen and (min-width: 1100px){
+    .Footer{
+        flex-direction: row;
+        justify-content: space-between;
     }
 }
