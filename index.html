@@ -20,13 +20,13 @@
             <nav class="Navigation">
                 <ul class="Navigation__Container">
                     <li class="Navigation__Route">
-                        <a href="/">Hola</a>
+                        <a href="#hola">Hola</a>
                     </li>
                     <li class="Navigation__Route">
-                        <a href="/">Proyectos</a>
+                        <a href="#proyectos">Proyectos</a>
                     </li>
                     <li class="Navigation__Route">
-                        <a href="/">Hablemos</a>
+                        <a href="#hablemos">Hablemos</a>
                     </li>
                 </ul>
             </nav>
@@ -34,7 +34,7 @@
             <jaume-button class="Header__Button">Curriculum</jaume-button>
         </header>
         <main>
-            <section class="Hero">
+            <section class="Hero" id="hola">
                 <picture class="Hero__Avatar">
                     <source media="(min-width: 414px )" srcset="/static/jaume-0.png">
                     <img src="/static/jaume-1.png" alt="Foto de perfil de Jaume">
@@ -52,18 +52,18 @@
                     <jaume-button url="/">Descargar currículum</jaume-button>
                 </div>
             </section>
-            <section class="Projects">
+            <section class="Projects" id="proyectos">
                 <div class="Projects__Intro fill-primary-color">
                     <p>A lo largo de mi carrera como Frontend, he tenido el privilegio de trabajar en proyectos retadores e increíbles</p>
                     <span>Aquí hay algunos que me gustaría compartir.</span>
-                    <a href="#">
+                    <a href="#proyecto">
                         <svg height="80px" width="80px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <use xlink:href="/static/icons/icons-down.svg#icon"></use>
                         </svg>
                     </a>
                 </div>
                 
-                <article class="Project">
+                <article class="Project" id="proyecto">
                     <div class="Project__Container">
                         <div class="Project__Info fill-primary-color">
                             <title-section>leonidasesteban.com</title-section>
@@ -133,7 +133,7 @@
                 </article>
 
             </section>
-            <section class="Contact">
+            <section class="Contact" id="hablemos">
                 <title-section>Hablemos</title-section>
                 <p class="fill-white-color">Si está interesado en trabajar conmigo en su próximo proyecto, no dude en ponerse en contacto conmigo.</p>
                 <form class="Contact__Form">
