@@ -27,7 +27,7 @@ class ContactIcon extends HTMLElement
         `
             <figure>
                 <svg class="icon-rrss" viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg">
-                    <use xlink:href="/static/icons/contact-icons.svg#${this.rrss}"></use>
+                    <use xlink:href="static/icons/contact-icons.svg#${this.rrss}"></use>
                 </svg>
             </figure>
             ${this.getStyles()}
