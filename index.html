@@ -4,14 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New Project</title>
-    <style>
-        body{
-            background: radial-gradient(41.48% 11.48% at 2.38% 8.52%, #747DE9 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(135deg, #72EDF2 0%, #5151E5 100%);
-            min-height: 100vh;
-        }
-    </style>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@700&family=Poppins:wght@400;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="/static/css/home.css"/>
 </head>
 <body>
+    <div id="page">
+        <header class="Header">
+            <svg class="Header__Logo fill-primary-color" viewBox="0 0 67 19" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="/static/logo.svg#logo"></use>
+            </svg>
+
+            <nav class="Navigation">
+                <ul class="Navigation__Container">
+                    <li class="Navigation__Route">
+                        <a href="/">Hola</a>
+                    </li>
+                    <li class="Navigation__Route">
+                        <a href="/">Proyectos</a>
+                    </li>
+                    <li class="Navigation__Route">
+                        <a href="/">Hablemos</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <jaume-button class="Header__Button">Curriculum</jaume-button>
+        </header>
+        <main>
+            <section class="Hero"></section>
+            <section class="Projects">
+                <div class="Projects__Intro"></div>
+                <article class="Project">
+                    <div class="Project__Container">
+                        <div class="Project__Info">
+                            <title-section>leonidasesteban.com</title-section>
+                            <p>Accede a más de 120 proyectos que te ayudarán a mejorar tus habilidades como desarrollador Front-End.</p>
+                            <div class="Project__Anchors">
+                                <jaume-button>Ver proyecto</jaume-button>
+                                <jaume-button secondary>Ver código</jaume-button>
+                            </div>
+                        </div>
+                        <img src="" alt="Foto del projecto">
+                    </div>
+                    <div class="Project__Review">
+                        <review-card avatar="/static/user-0.png">
+                            <span slot="review">"Jaume ha sido de gran ayuda para acelerar ciertos esfuerzos de desarrollo. Lo que nos hubiera llevado 6 meses solo les llevó 1,5 meses ".</span>
+                            <span slot="info">Leonidas Esteban / Cofundador y CEO de leonidasesteban.com</span>
+                        </review-card>
+                    </div>
+                </article>
+            </section>
+            <section class="Contact"></section>
+        </main>
+        <footer>
+            footer
+        </footer>
+    </div>
+
     <script type="module" src="/web-components/contact-icon.js"></script>
     <script type="module" src="/web-components/jaume-button.js"></script>
     <script type="module" src="/web-components/review-card.js"></script>

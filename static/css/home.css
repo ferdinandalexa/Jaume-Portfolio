@@ -1,0 +1,92 @@
+:root{
+    --headline1: bold 5.9375rem/9.6068754196167rem Poppins; 
+    --headline2: bold 3.6875rem/5.96637487411499rem Poppins; 
+    --headline3: bold 3rem/4.854000091552734rem Poppins; 
+    --headline4: bold 2.125rem/3.4382500648498535rem Poppins; 
+    --headline5: bold 1.5rem/2.427000045776367rem Poppins; 
+    --body1: regular 1rem/1.6180000305175781rem Poppins; 
+    --body2: regular 0.875rem/1.4157500267028809rem Poppins; 
+    --button: bold 0.875rem/1.4157500267028809rem Poppins; 
+    --caption: regular 0.75rem/1.2135000228881836rem Poppins;
+}
+
+body{
+    background: radial-gradient(41.48% 11.48% at 2.38% 8.52%, #747DE9 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(135deg, #72EDF2 0%, #5151E5 100%);
+    min-height: 100vh;
+}
+
+review-card{
+    font: var(--headline5);
+}
+
+title-section{
+    font: var(--headline5);
+}
+
+jaume-button{
+    font: var(--button);
+}
+
+.fill-primary-color{
+    color: #310A90;
+    fill: #310A90;
+}
+
+#page{
+    max-width: 1132px;
+    margin: auto;
+}
+
+.Header{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Header__Logo{
+    width: 67px;
+    height: 18px;
+    flex-shrink: 0;
+}
+
+.Navigation{
+    display: none;
+}
+
+.Navigation__Container{
+    display: flex;
+    gap: 24px;
+    list-style: none;
+    padding: 0;
+}
+.Navigation__Route{
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 23px;
+    letter-spacing: 1.25px;
+    text-transform: uppercase;
+}
+
+.Navigation__Route > a{
+    color: white;
+    text-decoration: none;
+    transition: color .2s ease;
+}
+
+@media screen and (min-width: 414px){
+    .Navigation{
+        display: flex;
+        flex-grow: 1;
+        justify-content: center;
+    }
+
+    .Navigation__Route > a:hover{
+        color: #310A90;
+    }
+
+    .Header__Button{
+        display: none;
+    }
+}

@@ -23,14 +23,14 @@ class TitleSection extends HTMLElement
     getStyles()
     {
         return `
-        <style>
+        <style>            
             h2{
                 display: inline-block;
                 background: #310A90;
                 box-shadow: -4px 4px 0px #FFFFFF;
                 color: white;
                 padding: 4px 8px;
-                font-family: sans-serif;
+                font: inherit;
             }
 
             :host([uppercase]){

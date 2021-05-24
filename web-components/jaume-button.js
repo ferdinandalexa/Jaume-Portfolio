@@ -47,8 +47,6 @@ class JaumeButton extends HTMLElement
                 box-sizing: border-box;
                 display: block;
                 font-family: sans-serif;
-                font-size: 14px;
-                font-weight: bold;
                 height: 49px;
                 letter-spacing: 1.25px;
                 line-height: 23px;

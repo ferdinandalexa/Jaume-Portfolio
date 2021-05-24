@@ -37,10 +37,9 @@ class ReviewCard extends HTMLElement
         <style>
             :host{
                 color: #310A90;
-                display: grid;
-                font-family: sans-serif;                
+                display: grid;     
                 position: relative;
-                max-width: 1132px;
+                max-width: 1136px;
             }
 
             
@@ -54,7 +53,7 @@ class ReviewCard extends HTMLElement
                 display: grid;
                 overflow: hidden;
                 row-gap: 24px;
-                padding: 80px;
+                padding: 24px;
                 place-items: center;
             }
             
@@ -69,13 +68,12 @@ class ReviewCard extends HTMLElement
             }
 
             .ReviewCard > p{
-                font-weight: bold;
-                font-size: 33px;
-                line-height: 55px;
+                font: bold 1rem/1.6180000305175781rem Oxygen; 
                 text-align: center;
             }
 
             .ReviewCard > h3{
+                font: inherit;
                 opacity: 50%;
                 text-transform: uppercase;
             }

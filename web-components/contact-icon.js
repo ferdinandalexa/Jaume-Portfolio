@@ -10,7 +10,7 @@ class ContactIcon extends HTMLElement
 
     static get observedAttributes()
     {
-        return ["rrss, style"];
+        return ["rrss"];
     }
 
     attributeChangedCallback(attr, oldValue, newValue) {
