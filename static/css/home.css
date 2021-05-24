@@ -1,18 +1,19 @@
 :root{
-    --headline1: bold 5.9375rem/9.6068754196167rem Poppins; 
-    --headline2: bold 3.6875rem/5.96637487411499rem Poppins; 
-    --headline3: bold 3rem/4.854000091552734rem Poppins; 
-    --headline4: bold 2.125rem/3.4382500648498535rem Poppins; 
-    --headline5: bold 1.5rem/2.427000045776367rem Poppins; 
-    --body1: regular 1rem/1.6180000305175781rem Poppins; 
-    --body2: regular 0.875rem/1.4157500267028809rem Poppins; 
-    --button: bold 0.875rem/1.4157500267028809rem Poppins; 
-    --caption: regular 0.75rem/1.2135000228881836rem Poppins;
+    --headline1: 700 5.9375rem/9.6068754196167rem Poppins; 
+    --headline2: 700 3.6875rem/5.96637487411499rem Poppins; 
+    --headline3: 700 3rem/4.854000091552734rem Poppins; 
+    --headline4: 700 2.125rem/3.4382500648498535rem Poppins; 
+    --headline5: 700 1.5rem/2.427000045776367rem Poppins; 
+    --body1: 400 1rem/1.6180000305175781rem Poppins; 
+    --body2: 400 0.875rem/1.4157500267028809rem Poppins; 
+    --button: 700 0.875rem/1.4157500267028809rem Poppins; 
+    --caption: 400 0.75rem/1.2135000228881836rem Poppins;
 }
 
 body{
     background: radial-gradient(41.48% 11.48% at 2.38% 8.52%, #747DE9 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(135deg, #72EDF2 0%, #5151E5 100%);
     min-height: 100vh;
+    margin: .5rem 1rem;
 }
 
 review-card{

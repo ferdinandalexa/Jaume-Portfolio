@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@700&family=Poppins:wght@400;700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="/static/css/home.css"/>
+    <link rel="stylesheet" href="/static/css/hero.css"/>
 </head>
 <body>
     <div id="page">
@@ -32,7 +33,24 @@
             <jaume-button class="Header__Button">Curriculum</jaume-button>
         </header>
         <main>
-            <section class="Hero"></section>
+            <section class="Hero">
+                <picture class="Hero__Avatar">
+                    <source media="(min-width: 414px )" srcset="/static/jaume-0.png">
+                    <img src="/static/jaume-1.png" alt="Foto de perfil de Jaume">
+                </picture>
+                <div class="Hero__Info fill-primary-color">
+                    <span class="Hero__Subtitle">¡Hola a todos!</span>
+                    <h1 class="Hero__Title">Soy Jaume</h1>
+                    <p class="Hero__Caption">Frontend Developer que le encanta implementar diseños que inspiran y atraen a las personas.</p>
+                    <div class="Hero__Contact">
+                        <contact-icon rrss="phone"></contact-icon>
+                        <contact-icon rrss="mail"></contact-icon>
+                        <contact-icon rrss="instagram"></contact-icon>
+                        <contact-icon rrss="twitter"></contact-icon>
+                    </div>
+                    <jaume-button url="/">Descargar currículum</jaume-button>
+                </div>
+            </section>
             <section class="Projects">
                 <div class="Projects__Intro"></div>
                 <article class="Project">

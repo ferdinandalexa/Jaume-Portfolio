@@ -29,7 +29,7 @@ class JaumeButton extends HTMLElement
         const template = document.createElement('template');
         template.innerHTML =
         `
-            <a>
+            <a href="${this.url}">
                 <slot></slot>
             </a>
             ${this.getStyles()}
@@ -45,6 +45,7 @@ class JaumeButton extends HTMLElement
                 border-radius: 4px;
                 border: 2px solid #310A90;
                 box-sizing: border-box;
+                cursor: pointer;
                 display: block;
                 font-family: sans-serif;
                 height: 49px;
@@ -65,6 +66,11 @@ class JaumeButton extends HTMLElement
             :host([secondary]){
                 background: transparent;
                 color: #310A90;
+            }
+
+            a{
+                color: inherit;
+                text-decoration: none;
             }
         </style>
         `
